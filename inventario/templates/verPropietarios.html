@@ -1,0 +1,23 @@
+
+
+{% extends 'comun.html' %}
+
+{% block content %}
+{% csrf_token %}
+<h1>propietarios</h1>
+<ul>
+    {% for verPropietario in verPropietario %}
+        
+            <li>
+                
+                    <p>{{verPropietario.nombre}}</p>
+                    <p>{{verPropietario.user}}</p>
+                
+                
+            
+            </li>
+        
+    {% endfor %}
+</ul>
+
+{% endblock %}

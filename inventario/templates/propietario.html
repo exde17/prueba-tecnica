@@ -1,0 +1,19 @@
+{% extends 'comun.html' %}
+
+{% block content %}
+<main class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <h1>Propietario</h1>
+            <form action="/propietario/" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+
+                <button class="btn btn-primary">
+                    Guardar
+                </button>
+            </form>
+    </div>
+    </div>
+</main>
+{% endblock %}

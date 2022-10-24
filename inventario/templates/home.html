@@ -1,0 +1,24 @@
+{% extends 'comun.html' %}
+
+{% block content %}
+{% csrf_token %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">Home</h1>
+        <p>Django Django es una banda británica de rock fundada en Londres en 2009. Han sacado cuatro álbumes de estudio, que son su álbum homónimo Django Django en 2012, Born Under Saturn en 2015, 1 ​ Marble Skies en 2018 y Glowing in the Dark en 2021.</p>
+        
+        <div class="text-center">
+            <a class="btn btn-primary" href="/logyn">
+                login
+            </a>
+            <a class="btn btn-warning" href="/">
+                salir
+            </a>
+        </div>
+        
+    </section>
+</main>
+    
+    
+{% endblock %}
+
